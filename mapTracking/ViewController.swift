@@ -153,7 +153,7 @@ extension ViewController{
         
         let session = URLSession.shared
         
-        let url = URL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=\(source.latitude),\(source.longitude)&destination=\(destination.latitude),\(destination.longitude)&sensor=false&mode=driving&key=AIzaSyBAu5e3Lqm2RfIlwHxxdnwc7N0dmERxl")!
+        let url = URL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=\(source.latitude),\(source.longitude)&destination=\(destination.latitude),\(destination.longitude)&sensor=false&mode=driving&key=")!
         
         let task = session.dataTask(with: url, completionHandler: {
             (data, response, error) in
@@ -209,7 +209,7 @@ extension ViewController{
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
 
-        let url = URL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=\(src.latitude),\(src.longitude)&destination=\(dst.latitude),\(dst.longitude)&sensor=false&mode=walking&key=AIzaSyBAu5e3Lqm2RfIlwHxxdnwc7N0dmERxl-c")!
+        let url = URL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=\(src.latitude),\(src.longitude)&destination=\(dst.latitude),\(dst.longitude)&sensor=false&mode=walking&key=")!
 
         let task = session.dataTask(with: url, completionHandler: {
             (data, response, error) in
